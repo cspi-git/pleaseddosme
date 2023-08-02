@@ -1,0 +1,43 @@
+/* Dependencies */
+@import url("https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&display=swap");
+
+/* Main */
+body {
+    background-color: #151515;
+}
+
+/* Effects */
+.shakeEffect {
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-size: 4vw;
+    font-weight: 900;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    background-size: 120% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -ms-background-clip: text;
+    -ms-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    background-image: linear-gradient(45deg, 
+                      rgb(41, 82, 58), 
+                      #653697,
+                      #FF1361,
+                      #2b914a);
+    animation: .8s shake infinite alternate;
+}
+  
+@keyframes shake {
+    0% { transform: skewX(-15deg); }
+    5% { transform: skewX(15deg); }
+    10% { transform: skewX(-15deg); }
+    15% { transform: skewX(15deg); }
+    20% { transform: skewX(0deg); }
+    100% { transform: skewX(0deg); }  
+}
